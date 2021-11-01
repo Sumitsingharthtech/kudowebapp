@@ -1,0 +1,124 @@
+.mainflex {
+  flex-wrap: wrap;
+}
+.innermain {
+  margin: 40px;
+}
+
+.headind_toggle {
+  margin-top: 36px;
+  margin-left: 10px;
+}
+
+.textmain {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.one {
+  border: 1px solid grey;
+  width: 30%;
+  border-radius: 5px;
+}
+.paginationfelx {
+  justify-content: flex-end;
+}
+
+.pagination {
+  margin-right: 350px;
+}
+.bordr {
+  border: 1px solid grey;
+  padding: 7px;
+  margin-top: -9px;
+}
+.bordr:hover {
+  background-color: rgb(39, 130, 216);
+  color: white;
+}
+
+.colr {
+  color: #87c44b;
+}
+.fa {
+  color: #87c44b;
+  font-size: 20px;
+}
+
+.btn {
+  color: white;
+}
+.headind {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.navpading {
+  padding: 0px 13px;
+}
+
+.increasebtn :hover {
+  color: white;
+}
+
+.searchicon {
+  margin: 2px;
+  color: white;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  /* when the button is toggled off 
+it is still in focus and a violet border will appear */
+  border-color: rgb(45, 185, 45) !important;
+  /* box shadow is blue by default
+but we do not want any shadow hence we have set 
+all the values as 0 */
+  box-shadow: 0 0 0 0rem rgba(0, 0, 0, 0) !important;
+}
+
+/*sets the background color of
+  switch to violet when it is checked*/
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: rgb(45, 185, 45) !important;
+  background-color: rgb(45, 185, 45) !important;
+}
+
+/*sets the background color of
+  switch to violet when it is active*/
+.custom-control-input:active ~ .custom-control-label::before {
+  background-color: rgb(45, 185, 45) !important;
+  border-color: green !important;
+}
+
+/*sets the border color of switch
+  to violet when it is not checked*/
+/* .custom-control-input:focus:
+  not(:checked) ~ .custom-control-label::before {
+        border-color: violet !important;
+    } */
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.page_icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-left: 10%;
+}
+.page_num {
+  font-size: 20px;
+  color: greenyellow;
+  margin-left: 18%;
+}
