@@ -27,7 +27,7 @@ const Nav = () => {
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-target="/navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -38,22 +38,22 @@ const Nav = () => {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/">
                 <FaFileImport style={{ fontSize: "25px" }} />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/">
                 <FaFileExport style={{ fontSize: "25px" }} />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/">
                 <BiImport style={{ fontSize: "25px" }} />
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/">
                 <AiOutlinePrinter style={{ fontSize: "25px" }} />
               </a>
             </li>
