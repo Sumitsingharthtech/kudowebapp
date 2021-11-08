@@ -122,3 +122,189 @@ all the values as 0 */
   color: greenyellow;
   margin-left: 18%;
 }
+/* .......... */
+
+.filterBackground {
+  width: 29vw;
+  height: 53vh;
+  background-color: rgba(200, 200, 200);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  margin: 0 auto;
+  left: 36%;
+  top: 80%;
+  border-radius: 13px;
+}
+
+.filterContainer {
+  width: 400px;
+  height: 375px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.filterContainer .title {
+  display: inline-block;
+  text-align: start;
+  margin-top: 10px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.body {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.body input {
+  float: right;
+}
+
+.filterContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.filterContainer .footer button {
+  width: 80px;
+  height: 35px;
+  margin: 10px;
+  border: none;
+
+  color: rgb(247, 247, 247);
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* #cancelBtn {
+  background-color: rgb(133, 124, 124);
+} */
+
+#cancelBtn {
+  background-color: #676869;
+  border-radius: 5px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 17px;
+  padding: 1px 3px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+#cancelBtn:hover {
+  background-color: rgb(40, 128, 230);
+}
+#cancelBtn:active {
+  position: relative;
+  top: 1px;
+}
+
+#sortBtn {
+  background-color: rgb(40, 128, 230);
+  border-radius: 5px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 17px;
+  padding: 1px 3px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+}
+#sortBtn:hover {
+  background-color: #676869;
+}
+#sortBtn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* #sortBtn {
+  background-color: rgb(40, 128, 230);
+} */
+.list_form {
+  width: 100px;
+  height: 30px;
+}
+.list_form option {
+  font-size: 15px;
+  width: 100px;
+  height: 30px;
+}
+.myButton {
+  background-color: #525559;
+  border-radius: 5px;
+  border: 1px solid #4e6096;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: Arial;
+  font-size: 13px;
+  padding: 7px 5px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #283966;
+  margin-right: 8px;
+}
+.myButton:hover {
+  background-color: #476e9e;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+.btn_icon {
+  color: white;
+  font-size: 12px;
+}
+
+.filterCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filterCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* .btn_cancle {
+  background-color: transparent;
+  font-family: Verdana;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 11px 37px;
+  text-decoration: none;
+} */
+/* .btn_cancle:hover {
+  background-color: #476e9e;
+}
+.btn_cancle:active {
+  position: relative;
+  top: 1px;
+} */

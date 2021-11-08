@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./card.css";
+import Display from "./Display";
+
 
 const Card = () => {
+  const [displayOpen, setDisplayOpen] = useState(false);
   return (
     <>
       <div class="container">
@@ -20,25 +23,27 @@ const Card = () => {
                   <div class="p-2 colr ">Message</div>
                   <div class="p-2 ml-auto  d-flex">
                     <a href="/">
-                      {" "}
-                      <i
-                        class="fa fa-trash navpading"
-                        aria-hidden="true"
-                      ></i>{" "}
+                      <i class="fa fa-trash navpading" aria-hidden="true"></i>{" "}
                     </a>
                     <a href="/">
                       <i class="fa fa-clone navpading" aria-hidden="true"></i>{" "}
                     </a>
+
                     <div class="custom-control custom-switch">
                       <input
                         type="checkbox"
                         class="custom-control-input"
                         id="one"
+                        onClick={() => {
+                          setDisplayOpen(true);
+                        }}
+                        
                       />
-                      <label class="custom-control-label" for="one">
-                        {" "}
-                      </label>
+                      <label class="custom-control-label" for="one"></label>
                     </div>
+                    {displayOpen && (
+                      <Display setDisplayModal={setDisplayOpen} />
+                    )}
                   </div>
                 </div>
               </div>
@@ -54,11 +59,7 @@ const Card = () => {
                   <div class="p-2 colr ">Message</div>
                   <div class="p-2 ml-auto  d-flex">
                     <a href="/">
-                      {" "}
-                      <i
-                        class="fa fa-trash navpading"
-                        aria-hidden="true"
-                      ></i>{" "}
+                      <i class="fa fa-trash navpading" aria-hidden="true"></i>{" "}
                     </a>
                     <a href="/">
                       <i class="fa fa-clone navpading" aria-hidden="true"></i>{" "}
@@ -69,9 +70,7 @@ const Card = () => {
                         class="custom-control-input"
                         id="two"
                       />
-                      <label class="custom-control-label" for="two">
-                        {" "}
-                      </label>
+                      <label class="custom-control-label" for="two"></label>
                     </div>
                   </div>
                 </div>
@@ -88,14 +87,10 @@ const Card = () => {
                   <div class="p-2  colr">Message</div>
                   <div class="p-2 ml-auto  d-flex">
                     <a href="/">
-                      {" "}
-                      <i
-                        class="fa fa-trash navpading"
-                        aria-hidden="true"
-                      ></i>{" "}
+                      <i class="fa fa-trash navpading" aria-hidden="true"></i>
                     </a>
                     <a href="/">
-                      <i class="fa fa-clone navpading" aria-hidden="true"></i>{" "}
+                      <i class="fa fa-clone navpading" aria-hidden="true"></i>
                     </a>
                     <div class="custom-control custom-switch">
                       <input
@@ -103,9 +98,7 @@ const Card = () => {
                         class="custom-control-input"
                         id="three"
                       />
-                      <label class="custom-control-label" for="three">
-                        {" "}
-                      </label>
+                      <label class="custom-control-label" for="three"></label>
                     </div>
                   </div>
                 </div>
@@ -129,14 +122,10 @@ const Card = () => {
                   <div class="p-2 colr ">Message</div>
                   <div class="p-2 ml-auto  d-flex">
                     <a href="/">
-                      {" "}
-                      <i
-                        class="fa fa-trash navpading"
-                        aria-hidden="true"
-                      ></i>{" "}
+                      <i class="fa fa-trash navpading" aria-hidden="true"></i>
                     </a>
                     <a href="/">
-                      <i class="fa fa-clone navpading" aria-hidden="true"></i>{" "}
+                      <i class="fa fa-clone navpading" aria-hidden="true"></i>
                     </a>
                     <div class="custom-control custom-switch">
                       <input
@@ -144,9 +133,7 @@ const Card = () => {
                         class="custom-control-input"
                         id="four"
                       />
-                      <label class="custom-control-label" for="four">
-                        {" "}
-                      </label>
+                      <label class="custom-control-label" for="four"></label>
                     </div>
                   </div>
                 </div>

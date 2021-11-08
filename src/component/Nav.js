@@ -8,6 +8,7 @@ import { FaSort } from "react-icons/fa";
 import { AiFillEye } from "react-icons/ai";
 import Modal from "./Modal";
 import Filter from "./Filter";
+import {Link} from 'react-router-dom';
 
 const Nav = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -17,10 +18,12 @@ const Nav = () => {
     <div>
       <div class="headind ">
         <h4>Autoresponder List</h4>
+        <Link to="/table" > 
         <div className="custom-control custom-switch   headind_toggle">
           <input type="checkbox" class="custom-control-input" id="first" />
           <label class="custom-control-label" for="first"></label>
         </div>
+        </Link>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button

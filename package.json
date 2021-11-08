@@ -1,5 +1,7 @@
 {
   "name": "kudo",
+  "homepage": "https://mydesignwork.online/kudoapp",
+
   "version": "0.1.0",
   "private": true,
   "dependencies": {
